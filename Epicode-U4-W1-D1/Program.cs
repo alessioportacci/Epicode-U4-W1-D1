@@ -22,6 +22,17 @@ namespace Epicode_U4_W1_D1
             auto2.Marca = "Fiat";
             Console.WriteLine(auto2.Marca) ;
 
+            Dipendente dipendente = new Dipendente();
+
+
+            Prodotto prodotto  = new Prodotto();
+            prodotto.Quantita = 5;
+            prodotto.Nome = "Nintendo DS";
+            prodotto.Prezzo = 100;
+            Console.WriteLine(string.Concat(prodotto.Quantita, " ",
+                                            prodotto.Nome, " costano ",
+                                            prodotto.getTotale()), "€"
+                                           );
 
             Console.ReadLine();
         }
